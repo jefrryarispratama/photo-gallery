@@ -1,3 +1,31 @@
+# For Newbie
+
+Untuk kamu yang ingin menggunakan repository ini, kamu bisa install dulu react + vite / Next js kemudian install juga react-transition-state 
+
+
+  - npm install -D vite //choose react + ts(optional)
+  - npm install react-transition-state
+
+setelah install semua packages, buat sebuah file example.tsx/jsx dan paste code bawah ini ke dalamnya dan import sebagai react component
+
+```js
+import useTransition from "react-transition-state";
+import './example.css'
+
+function Example() {
+    const [state, toggle] = useTransition({ timeout: 750, preEnter: true });
+    return (
+      <div>
+        <button onClick={() => toggle()}>toggle</button>
+        <div className={`example ${state.status}`}>React transition state</div>
+      </div>
+    );
+  }
+  
+  export default Example;
+```
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
