@@ -4,6 +4,8 @@ Untuk kamu yang ingin menggunakan repository ini, kamu bisa install dulu react +
 
 
   - npm install -D vite //choose react + ts(optional)
+  - npm install 
+  - npm run dev 
   - npm install react-transition-state
 
 setelah install semua packages, buat sebuah file example.tsx/jsx dan paste code bawah ini ke dalamnya dan import sebagai react component
@@ -24,6 +26,9 @@ function Example() {
   
   export default Example;
 ```
+
+setelah berhasil jalan codenya kamu bisa mengikuti contoh penggunaan yang saya terapkan pada file App tersebut.
+
 
 
 # React + TypeScript + Vite
